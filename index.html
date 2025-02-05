@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Payment Form</title>
+		<title>Spectrum Billing</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
 			rel="stylesheet"
@@ -16,6 +16,12 @@
 			.cc-img {
 				margin: 0 auto;
 			}
+			.page-header {
+				padding: 0px 20px;
+				margin: 0 0 10px 10px; /* Reduced the top margin to 0 */
+				border-radius: 8px;
+			}
+
 			.loading-overlay {
 				display: none;
 				position: fixed;
@@ -37,6 +43,11 @@
 			.error {
 				border-color: #ff0000 !important;
 			}
+			/* .logo-img {
+				margin-bottom: 0px; 
+				max-width: 100px;
+				height: auto;
+			} */
 		</style>
 	</head>
 	<body>
@@ -49,8 +60,15 @@
 				</div>
 			</div>
 
-			<div class="page-header">
-				<h1>Spectrum</h1>
+			<div class="page-header" style="height: 80px">
+				<h1>
+					<img
+						src="images/spectrum-logo.png"
+						alt="Spectrum Logo"
+						class="logo-img"
+						style="max-width: 180px; height: auto"
+					/>
+				</h1>
 			</div>
 
 			<div class="container">
@@ -59,7 +77,7 @@
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<div class="row">
-									<h3 class="text-center">Payment Details</h3>
+									<h3 class="text-center">Card Details</h3>
 									<picture>
 										<!-- <source srcset="images/creditcardicons.webp" type="image/webp"> -->
 										<img
